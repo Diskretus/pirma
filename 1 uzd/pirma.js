@@ -10,7 +10,7 @@ let data = {
     5: 'Pasvalys'
 }
 
-app.get('/cities', (showAll));
+app.get('/cities', showAll);
 
 function showAll(req, res) {
     res.send(data);
