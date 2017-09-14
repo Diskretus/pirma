@@ -23,9 +23,9 @@ function showOne(req, res) {
     let replay = {};
 
     if (data[city] === undefined) {
-        replay.status = 'tokio miesto nera';
+        replay = 'tokio miesto nera';
     } else {
-        replay.miestas = data[city];
+        replay = ('pasirinktas miestas: ' + data[city]);
     }
     res.send(replay);
 }
